@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR lFf">
-    <q-header elevated>
+    <q-header v-if="false" elevated>
       <q-toolbar>
         <q-btn
           flat
@@ -20,6 +20,7 @@
     </q-header>
 
     <q-drawer
+      v-if="false"
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -39,11 +40,11 @@
       </q-list>
     </q-drawer>
 
-<!--    <q-page-container>-->
-<!--      <router-view />-->
-<!--    </q-page-container>-->
+    <q-page-container>
+      <router-view />
+    </q-page-container>
 
-    <q-footer v-if="true" class="bg-white">
+    <q-footer v-if="false" class="bg-white">
       <q-tabs
         dense
         class="text-grey-8"
