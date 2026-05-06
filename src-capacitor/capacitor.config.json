@@ -1,0 +1,9 @@
+{
+  "appId": "org.capacitor.quasar.app",
+  "appName": "Vue Cards Game",
+  "webDir": "www",
+  "server": {
+    "url": "http://192.168.1.94:9500",
+    "cleartext": true
+  }
+}
