@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="hHh lpR lFf">
     <q-header elevated>
       <q-toolbar>
         <q-btn
@@ -39,11 +39,11 @@
       </q-list>
     </q-drawer>
 
-    <q-page-container>
-      <router-view />
-    </q-page-container>
+<!--    <q-page-container>-->
+<!--      <router-view />-->
+<!--    </q-page-container>-->
 
-    <q-footer class="bg-white">
+    <q-footer v-if="true" class="bg-white">
       <q-tabs
         dense
         class="text-grey-8"
@@ -112,6 +112,7 @@ const linksList: EssentialLinkProps[] = [
 const leftDrawerOpen = ref(false);
 
 function toggleLeftDrawer () {
+  console.log('!!!')
   leftDrawerOpen.value = !leftDrawerOpen.value;
 }
 </script>
