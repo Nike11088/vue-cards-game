@@ -4,13 +4,13 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/StartPage.vue') }],
+    children: [{ path: '', component: () => import('pages/FieldPage.vue') }],
   },
 
   {
-    path: '/board',
+    path: '/game-field',
     component: () => import('layouts/MainLayout.vue'),
-    children: [{ path: '', component: () => import('pages/BoardPage.vue') }],
+    children: [{ path: '', component: () => import('pages/FieldPage.vue') }],
   },
 
   // Always leave this as last one,
